@@ -3,7 +3,7 @@
 
 ***Thành viên thực hiện*** 
 
-- Hướng dẫn: Thầy Văn Thế Thành 
+- Hướng dẫn: Cô Nguyễn Thị Hồng Anh
     + Ngô Huy Thắng - 09DHTH8 - HUFI
     + Ngô Khiêm - 09DHTH2 - HUFI
 
