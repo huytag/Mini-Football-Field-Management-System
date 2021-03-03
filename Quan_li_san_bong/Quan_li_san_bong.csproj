@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2E507F4-4AB2-4406-A385-FD58E22A944F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quan_li_san_bong</RootNamespace>
+    <AssemblyName>Quan_li_san_bong</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="FlatButton">
+      <HintPath>..\..\..\JTEXTBOX\FlatButton.dll</HintPath>
+    </Reference>
+    <Reference Include="JImageButton">
+      <HintPath>..\..\..\JTEXTBOX\JImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="JMaterialTextbox">
+      <HintPath>..\..\..\JTEXTBOX\JMaterialTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="JMetroTextBox">
+      <HintPath>..\..\..\JTEXTBOX\JMetroTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JTextBox">
+      <HintPath>..\..\..\JTEXTBOX\JTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JThinButton">
+      <HintPath>..\..\..\JTEXTBOX\JThinButton.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs" />
+    <Compile Include="Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChonSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChonSan.Designer.cs">
+      <DependentUpon>ChonSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.cs" />
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DU.cs" />
+    <Compile Include="HD.cs" />
+    <Compile Include="KhachHang.cs" />
+    <Compile Include="NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DichVu.Designer.cs">
+      <DependentUpon>DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLNV.Designer.cs">
+      <DependentUpon>QLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLiKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLiKho.Designer.cs">
+      <DependentUpon>QuanLiKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLiSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiSan.Designer.cs">
+      <DependentUpon>QuanLiSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThanhToanTien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThanhToanTien.Designer.cs">
+      <DependentUpon>ThanhToanTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuatHDSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatHDSan.Designer.cs">
+      <DependentUpon>XuatHDSan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChonSan.resx">
+      <DependentUpon>ChonSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="DichVu.resx">
+      <DependentUpon>DichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNV.resx">
+      <DependentUpon>QLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLiKho.resx">
+      <DependentUpon>QuanLiKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLiSan.resx">
+      <DependentUpon>QuanLiSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToanTien.resx">
+      <DependentUpon>ThanhToanTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatHDSan.resx">
+      <DependentUpon>XuatHDSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanbong1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanbong11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mirinda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuocsuoi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kich-thuoc-san-da-bong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kich-thuoc-san-da-bong1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\6909.jpg_wh860.jpg" />
+    <None Include="Resources\6909.jpg_wh8601.jpg" />
+    <Content Include="Resources\hinh-nen-bong-da-dep-12.jpg" />
+    <None Include="Resources\hinh-nen-bong-da-dep-121.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\md_5afbe35fd36cc.jpg" />
+    <None Include="Resources\md_5afbe35fd36cc1.jpg" />
+    <Content Include="Resources\png-clipart-computer-icons-button-delete-button-angle-trademark.png" />
+    <None Include="Resources\png-clipart-computer-icons-button-delete-button-angle-trademark1.png" />
+    <Content Include="Resources\repair.png" />
+    <None Include="Resources\repair1.png" />
+    <Content Include="Resources\U23-Viet-nam.jpg" />
+    <None Include="Resources\U23-Viet-nam1.jpg" />
+    <None Include="Resources\images1.jpg" />
+    <Content Include="Resources\messi.jpg" />
+    <None Include="Resources\neymar1.jpg" />
+    <None Include="Resources\messi1.jpg" />
+    <Content Include="Resources\neymar.jpg" />
+    <Content Include="Resources\pngtree-a-beautiful-football-png-image_4477903.jpg" />
+    <None Include="Resources\pngtree-a-beautiful-football-png-image_44779031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
