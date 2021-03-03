@@ -20,10 +20,13 @@ MFFMS hỗ trợ tin học hóa các chức năng nghiệp vụ cơ bản mà m�
 - C# 6.0
 - Microsoft Visual Studio Enterprise 2019
 ## Mô hình tổng quát của chương trình 
-![enter image description here](https://user-images.githubusercontent.com/75923948/109263199-7109ce80-7835-11eb-8342-5ca6762f62ca.png)
+![enter image description here](https://user-images.githubusercontent.com/75923948/109837612-ef240600-7c77-11eb-90be-6145e6d878de.png)
 ## Giao diện GUi
-![enter image description here](https://user-images.githubusercontent.com/75923948/109263199-7109ce80-7835-11eb-8342-5ca6762f62ca.png)
-
+![enter image description here](https://user-images.githubusercontent.com/75923948/109837432-c1d75800-7c77-11eb-81bb-bd78dcfeb023.png)
+## Giao dien đặt sân 
+![enter image description here](https://user-images.githubusercontent.com/75923948/109837506-d582be80-7c77-11eb-968f-be9a1ec9d0ba.png)
+## Thông tin hóa đơn
+![enter image description here](https://user-images.githubusercontent.com/75923948/109837554-e0d5ea00-7c77-11eb-9540-38ab69d09fc1.png)
 
 
 
